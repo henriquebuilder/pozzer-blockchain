@@ -107,7 +107,7 @@ The project uses an edge-first architecture with Cloudflare Workers to deliver l
 
 Testnet environment is live and accessible:
 
-🔗 https://seu-link-aqui.com
+🔗 https://www.pozzer.io/
 
 The platform allows wallet connection, interaction with missions, and real-time backend validation.
 
