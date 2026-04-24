@@ -1,174 +1,232 @@
-# Pozzer - DePIN Protocol for Real-World Web3 Applications
+# Pozzer — DePIN Protocol for Decentralized Infrastructure
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
-![React](https://img.shields.io/badge/React-19.0-61DAFB)
-![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-orange)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020)
+![Web3](https://img.shields.io/badge/Web3-Multi--chain-purple)
+![Solidity](https://img.shields.io/badge/Solidity-Smart%20Contracts-363636)
 
-Full-stack Web3 DePIN protocol with multi-chain wallet integration, gamification, and enterprise-level security, built with React, TypeScript, Cloudflare Workers, and edge-native data architecture.
+Full-stack Web3 protocol designed for decentralized infrastructure participation, combining wallet-based authentication, multi-chain interaction, gamification, and edge-native architecture.
+
+> Built as a scalable **testnet environment** to validate real-world DePIN mechanics and user participation.
 
 ---
 
 ## 🚀 Project Summary
 
-Pozzer is a **full-stack DePIN protocol** designed to simulate and validate real-world decentralized infrastructure participation.
+Pozzer is a DePIN (Decentralized Physical Infrastructure Network) protocol designed to enable users to participate in decentralized infrastructure through verifiable actions, network validation, and reward distribution.
 
-It combines:
-- Wallet-based authentication (Web3)
+The platform combines:
+
+- Web3 wallet authentication (signature-based)
 - Edge-native backend (Cloudflare Workers)
-- Multi-chain interaction
+- Multi-chain infrastructure (EVM-compatible networks)
 - Gamified participation and reward system
 
-Built as a **production-oriented portfolio project**, focusing on scalability, security, and real-world architecture patterns used in Web3 systems.
+This repository represents a **testnet-phase implementation of a scalable Web3 protocol**, focused on performance, security, and real-world architecture patterns.
 
 ---
 
 ## 🌟 Overview
 
-Pozzer is a portfolio-ready DePIN (Decentralized Physical Infrastructure Network) platform that enables users to participate in decentralized infrastructure through wallet-based interaction, mission validation, and reward distribution.
+Pozzer enables users to interact with decentralized infrastructure through:
 
-The project uses an edge-first architecture with Cloudflare Workers to deliver low-latency API responses, scalable backend logic, and secure multi-chain integration.
+- Wallet-based authentication
+- Mission-based participation
+- Validator/network simulation
+- Reward distribution systems
+
+The system is built using an **edge-first architecture**, delivering:
+
+- Low-latency API responses
+- Scalable backend execution
+- Secure multi-chain interactions
 
 ---
 
 ## 🧠 Key Engineering Highlights
 
-- Designed and implemented **20+ REST API endpoints**
-- Structured **13 relational database tables (Cloudflare D1)**
-- Built **25+ reusable React components**
-- Implemented **wallet-based authentication (signature + nonce)**
-- Developed **edge-first backend architecture (low latency, serverless)**
-- Applied **rate limiting, logging, and security layers**
+- 20+ REST API endpoints (edge-native)
+- 13 relational database tables (Cloudflare D1)
+- Wallet authentication using nonce + signature verification
+- Multi-chain integration (Ethereum, Polygon, BSC, Arbitrum)
+- Real-time network monitoring and validator simulation
+- Security layers: rate limiting, logging, input validation
 
 ---
 
 ## 🔄 User Flow
 
-1. **Wallet Connection:** User connects wallet (WalletConnect/Web3Modal)  
-2. **Participation:** User performs missions and platform interactions  
-3. **Backend Processing:** Requests handled via REST APIs on the Edge  
-4. **Validation:** Node/verification logic validates actions  
-5. **Rewards:** progression and rewards are updated based on participation  
+1. **Wallet Connection**
+   - User connects via Web3Modal / WalletConnect
+
+2. **Authentication**
+   - Signature verification using nonce-based flow
+
+3. **Participation**
+   - User completes missions and interacts with the system
+
+4. **Validation**
+   - Backend processes and validates actions
+
+5. **Rewards**
+   - Progression and rewards updated dynamically
 
 ---
 
 ## 🛠️ Core Components
 
-- **Web3 Authentication:** Nonce + signature verification  
-- **API Layer:** Cloudflare Workers + Hono  
-- **Node Logic:** Worker / Verifier / Delegator simulation  
-- **Gamification:** Reward distribution and progression system  
-- **Integration:** Multi-chain layer (Ethereum, Polygon, BSC, Arbitrum)  
-- **Admin Dashboard:** Review, moderation, and security monitoring  
+### 🔐 Web3 Authentication
+- Nonce generation and validation
+- Signature verification (EVM wallets)
+
+### ⚙️ API Layer
+- Cloudflare Workers (serverless edge runtime)
+- Hono framework (lightweight API routing)
+
+### 🌐 Multi-chain Layer
+- Ethereum
+- Polygon
+- BSC
+- Arbitrum
+
+### 🎮 Gamification Engine
+- Mission system
+- XP and reward distribution
+- Progression tiers
+
+### 🧩 Admin System
+- Verification queue
+- Moderation tools
+- Security monitoring
 
 ---
 
 ## 🏗️ Architecture
 
-- **Frontend:** React + TypeScript + React Router + Tailwind + UI components  
-- **Backend:** Cloudflare Workers (edge functions)  
-- **Database:** Cloudflare D1 (edge-native relational DB)  
-- **Storage:** Cloudflare R2  
-- **Protocol Layer:** Multi-chain interaction layer  
+**Frontend**
+- React
+- TypeScript
+- Tailwind CSS
+- React Router
+
+**Backend**
+- Cloudflare Workers (edge functions)
+- Hono
+
+**Database**
+- Cloudflare D1 (SQLite serverless)
+
+**Storage**
+- Cloudflare R2
+
+**Web3 Layer**
+- Ethers.js
+- Web3Modal
+- WalletConnect
 
 ---
 
 ## ⚡ Technical Challenges Solved
 
-- **Secure Auth:** Wallet authentication without private key exposure  
-- **Performance:** Low-latency handling in serverless environments  
-- **Scalability:** Anti-abuse controls for reward mechanics  
-- **UX:** Multi-chain compatibility in a unified interface  
-- **Modeling:** Node-based participation and verification design  
+- Secure wallet authentication without exposing private keys
+- Low-latency execution in serverless environments
+- Anti-abuse mechanisms for reward systems (anti-sybil logic)
+- Multi-chain compatibility in a unified interface
+- Scalable validation and participation modeling
 
 ---
 
 ## 🔐 Security
 
-- Wallet signature verification (nonce-based)  
-- JWT authentication + bcrypt password hashing (admin)  
-- Multi-layer rate limiting (IP and wallet)  
-- Request logging and suspicious activity tracking  
-- Input sanitization + strict endpoint controls  
+- Wallet signature verification (nonce-based)
+- JWT authentication for admin
+- bcrypt password hashing
+- Rate limiting (IP + wallet)
+- Request logging and anomaly detection
+- Input sanitization and strict endpoint validation
 
 ---
 
 ## 📊 Project Highlights
 
-- 20+ REST API endpoints  
-- 13 relational database tables  
-- 25+ React components  
-- Multi-wallet support via WalletConnect  
-- Edge deployment architecture (Cloudflare)  
+- 20+ API endpoints
+- 13 database tables
+- Multi-chain wallet support
+- Edge deployment (Cloudflare)
+- Real-time system design
 
 ---
 
 ## 🚀 Live Demo
 
-Testnet environment is live and accessible:
+Testnet environment is live:
 
 🔗 https://www.pozzer.io/
 
-The platform allows wallet connection, interaction with missions, and real-time backend validation.
+Features:
+- Wallet connection
+- Mission participation
+- Real-time backend validation
+- Gamified progression
 
 ---
 
 ## 📂 Documentation
 
-Technical docs are available in the `docs` folder:
+Technical documentation available:
+docs/
+├── ARCHITECTURE.md
+├── SECURITY.md
+├── ROUTES.md
 
-- docs/ARCHITECTURE.md  
-- docs/SECURITY.md  
-- docs/routes.md  
 
 ---
 
 ## 💻 Run Locally
 
-### Windows (PowerShell)
-```powershell
+### Install dependencies
+```bash
 npm install
-copy .env.example .env
-npm run dev
 ```
 
-### Linux/Mac
-```
-npm install
+Setup environment
+```bash
 cp .env.example .env
+```
+
+Run project
+```bash
 npm run dev
 ```
 
-## 🌐 Environment Variables (.env)
-
-Use .env.example as the source of truth.
-```
 VITE_WALLETCONNECT_PROJECT_ID=your_id_here
 ADMIN_JWT_SECRET=your_secret_here
 AUTHORIZED_ADMIN_EMAILS=admin@example.com
 TESTNET_UNLOCK_DATE=2025-04-01T00:00:00Z
-```
-## ⚠️ Limitations
 
-This is a portfolio-adapted version of a broader system.
+⚠️ Disclaimer
 
-Part of the node network behavior is simulated for demo usability.
+Pozzer is currently operating in a testnet environment.
 
-It is not a fully decentralized production network.
+Certain components — including parts of the validation layer and infrastructure logic — are abstracted to ensure usability and controlled experimentation.
 
-## 📈 Tokenomics (Overview)
+This repository focuses on demonstrating protocol architecture, system design, and engineering decisions, rather than exposing full production infrastructure.
 
-Tiered participation model (Explorer -> Genesis Operator).
+📈 Tokenomics (Overview)
+Tier-based participation model
+Reward multipliers
+Mission-driven progression
+NFT-based reward concepts (future expansion)
+🌎 Vision
 
-Reward multipliers and mission-based progression.
+To build scalable decentralized infrastructure where users can contribute resources, validate networks, and earn rewards — bridging Web3 with real-world systems.
 
-NFT-related reward concepts for top participants.
-
-## 🤝 Community & Support
-
+🤝 Community
 Twitter: @pozzer_depin
 Telegram: t.me/pozzerpt
-
-Status: Testnet in development.
-
 Email: contato@pozzer.io
+📄 License
+
+MIT
