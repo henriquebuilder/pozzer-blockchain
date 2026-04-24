@@ -176,10 +176,10 @@ Features:
 ## 📂 Documentation
 
 Technical documentation available:
-docs/
-├── ARCHITECTURE.md
-├── SECURITY.md
-├── ROUTES.md
+# docs/
+-├── ARCHITECTURE.md
+-├── SECURITY.md
+-├── ROUTES.md
 
 
 ---
@@ -201,12 +201,14 @@ Run project
 npm run dev
 ```
 
+## 🌐 Environment Variables
+
 VITE_WALLETCONNECT_PROJECT_ID=your_id_here
 ADMIN_JWT_SECRET=your_secret_here
 AUTHORIZED_ADMIN_EMAILS=admin@example.com
 TESTNET_UNLOCK_DATE=2025-04-01T00:00:00Z
 
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 
 Pozzer is currently operating in a testnet environment.
 
@@ -214,19 +216,21 @@ Certain components — including parts of the validation layer and infrastructur
 
 This repository focuses on demonstrating protocol architecture, system design, and engineering decisions, rather than exposing full production infrastructure.
 
-📈 Tokenomics (Overview)
+## 📈 Tokenomics (Overview)
 Tier-based participation model
 Reward multipliers
 Mission-driven progression
 NFT-based reward concepts (future expansion)
-🌎 Vision
+
+## 🌎 Vision
 
 To build scalable decentralized infrastructure where users can contribute resources, validate networks, and earn rewards — bridging Web3 with real-world systems.
 
-🤝 Community
+## 🤝 Community
 Twitter: @pozzer_depin
 Telegram: t.me/pozzerpt
 Email: contato@pozzer.io
-📄 License
+
+## 📄 License
 
 MIT
