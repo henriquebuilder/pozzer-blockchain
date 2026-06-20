@@ -13,7 +13,7 @@ Full-stack Web3 protocol designed for decentralized infrastructure participation
 
 ---
 
-## 🚀 Project Summary
+##  Project Summary
 
 Pozzer is a DePIN (Decentralized Physical Infrastructure Network) protocol designed to enable users to participate in decentralized infrastructure through verifiable actions, network validation, and reward distribution.
 
@@ -28,7 +28,7 @@ This repository represents a **testnet-phase implementation of a scalable Web3 p
 
 ---
 
-## 🌟 Overview
+##  Overview
 
 Pozzer enables users to interact with decentralized infrastructure through:
 
@@ -45,7 +45,7 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 🧠 Key Engineering Highlights
+##  Key Engineering Highlights
 
 - 20+ REST API endpoints (edge-native)
 - 13 relational database tables (Cloudflare D1)
@@ -56,7 +56,7 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 🔄 User Flow
+##  User Flow
 
 1. **Wallet Connection**
    - User connects via Web3Modal / WalletConnect
@@ -75,35 +75,35 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 🛠️ Core Components
+##  Core Components
 
-### 🔐 Web3 Authentication
+###  Web3 Authentication
 - Nonce generation and validation
 - Signature verification (EVM wallets)
 
-### ⚙️ API Layer
+###  API Layer
 - Cloudflare Workers (serverless edge runtime)
 - Hono framework (lightweight API routing)
 
-### 🌐 Multi-chain Layer
+###  Multi-chain Layer
 - Ethereum
 - Polygon
 - BSC
 - Arbitrum
 
-### 🎮 Gamification Engine
+###  Gamification Engine
 - Mission system
 - XP and reward distribution
 - Progression tiers
 
-### 🧩 Admin System
+###  Admin System
 - Verification queue
 - Moderation tools
 - Security monitoring
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 **Frontend**
 - React
@@ -128,7 +128,7 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## ⚡ Technical Challenges Solved
+##  Technical Challenges Solved
 
 - Secure wallet authentication without exposing private keys
 - Low-latency execution in serverless environments
@@ -138,7 +138,7 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 🔐 Security
+##  Security
 
 - Wallet signature verification (nonce-based)
 - JWT authentication for admin
@@ -149,7 +149,7 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 📊 Project Highlights
+##  Project Highlights
 
 - 20+ API endpoints
 - 13 database tables
@@ -159,11 +159,11 @@ The system is built using an **edge-first architecture**, delivering:
 
 ---
 
-## 🚀 Live Demo
+##  Live Demo
 
 Testnet environment is live:
 
-🔗 https://www.pozzer.io/
+ https://www.pozzer.io/
 
 Features:
 - Wallet connection
@@ -173,7 +173,7 @@ Features:
 
 ---
 
-## 📂 Documentation
+##  Documentation
 
 Technical documentation available:
 # docs/
@@ -184,7 +184,7 @@ Technical documentation available:
 
 ---
 
-## 💻 Run Locally
+##  Run Locally
 
 ### Install dependencies
 ```bash
@@ -201,14 +201,14 @@ Run project
 npm run dev
 ```
 
-## 🌐 Environment Variables
+##  Environment Variables
 
 VITE_WALLETCONNECT_PROJECT_ID=your_id_here
 ADMIN_JWT_SECRET=your_secret_here
 AUTHORIZED_ADMIN_EMAILS=admin@example.com
 TESTNET_UNLOCK_DATE=2025-04-01T00:00:00Z
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 Pozzer is currently operating in a testnet environment.
 
@@ -216,20 +216,20 @@ Certain components — including parts of the validation layer and infrastructur
 
 This repository focuses on demonstrating protocol architecture, system design, and engineering decisions, rather than exposing full production infrastructure.
 
-## 📈 Tokenomics (Overview)
+##  Tokenomics (Overview)
 Tier-based participation model
 Reward multipliers
 Mission-driven progression
 NFT-based reward concepts (future expansion)
 
-## 🌎 Vision
+##  Vision
 
 To build scalable decentralized infrastructure where users can contribute resources, validate networks, and earn rewards — bridging Web3 with real-world systems.
 
-## 🤝 Community
+##  Community
 - Twitter: @pozzer_depin
 - Telegram: t.me/pozzerpt
 - Email: contato@pozzer.io
 
-## 📄 License
+##  License
 - MIT
